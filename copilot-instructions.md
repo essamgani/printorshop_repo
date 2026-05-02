@@ -1,0 +1,1 @@
+/Users/gke/Sites/localhost/formation/udemy/shopify/Elizabeth/AGENTS.md
