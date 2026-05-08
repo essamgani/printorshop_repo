@@ -59,7 +59,7 @@
             </h1>
             {% paginate article.comments by 5 %}
                 {% for comment in article.comments %}
-                    <div class="flex-1border my-4px-4 py-2 sm:px-6 sm:py-4 leading-relaxed">
+                    <div class="flex-1border my-4px-4 py-2 sm:px-6 sm:py-4 leading-relaxed border">
                         <span class="comment-autor">{{ comment.author }}</span>
                         <span class="text-xs text-gray-400">{{ comment.created_at | date: format: 'default' }}</span>
                         <p class="text-sm">{{ comment.content }}</p>
