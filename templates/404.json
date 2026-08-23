@@ -5,7 +5,7 @@
             "type":"template-404" //it's a file in section folder
         }
     },
-    "order":["template"]
+    "order":["template"] // here we specify the template which is "section" child above
 
 
 }
