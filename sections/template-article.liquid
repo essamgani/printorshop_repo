@@ -132,7 +132,7 @@
             <div class="px-1 md:flex mb-3">
                 <div class="md:w-full px-3">
                     <label for="comment_content" class="text-gray-700 font-medium uppercase text-xs mb-2">Comment</label>
-                    <textarea class="w-full text-gray-700 resize-none border h-20 py-2 px-3" name="comment[body]" id="comment_content" required>
+                    <textarea class="w-full text-gray-700 r++esize-none border h-20 py-2 px-3" name="comment[body]" id="comment_content" required>
                     </textarea>
                 </div>
             </div>
@@ -150,7 +150,7 @@
 {% endif %}
 
 
-<script>
+<script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type":"BlogPosting",
@@ -164,6 +164,16 @@
                 {{ article.image | img_url: "medium" |  prepend: 'https:' | json }}
             ],
         {% endif %}
+        "datePublished" : {{ article.published_at | date: format: "default" | json }},
+        "dateCreated" : {{ article.created_at | date: format: "default" | json }},
+        "author" : {
+            "@type" : "Person",
+            "name": {{ article.author | json }}
+        },
+        "publisher" : {
+            "@type" : "Organization",
+            "name" : {{ shop.name | json }}
+        }
 
     }
     
