@@ -16,7 +16,9 @@
     "contact_form_jQwkLU": {
       "type": "contact-form",
       "name": "Contact Form",
-      "settings": {}
+      "settings": {
+        "title": "Contact us"
+      }
     }
   },
   "order": [
