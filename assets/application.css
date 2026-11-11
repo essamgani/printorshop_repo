@@ -63,6 +63,7 @@
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --height-94: 22rem;
   }
 }
 @layer base {
@@ -358,7 +359,7 @@
     height: calc(var(--spacing) * 80);
   }
   .h-94 {
-    height: calc(var(--spacing) * 94);
+    height: var(--height-94);
   }
   .h-100 {
     height: calc(var(--spacing) * 100);
